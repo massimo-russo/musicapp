@@ -1,0 +1,220 @@
+:root {
+    --white-color: white;
+    --light-color: grey;
+    --black-color: black;
+    --blue-color: blue;
+    --transition: 0.2s;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 55%;
+  }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    color: black;
+    background-color:white;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 60rem;
+  }
+
+  /*barra navigazione*/
+  nav {
+    background-color: rgb(149, 225, 255);
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  nav li {
+    list-style-type: none;
+    margin-top: 4rem;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+
+  }
+  nav i :hover{
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  nav i:hover,
+.active {
+  color: blue;
+}
+
+  /*definizione carattteristiche header*/
+  header {
+    background-color:grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    color: var(--white-color);
+  }
+
+  .icon {
+    background-image: url('animazione.gif');
+    /*background-image: url('animazione2.gif');*/
+    height: 30rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  header .text {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 15rem;/*spazio titolo e icone in basso*/
+    padding-left: 8rem;/*spazio tra cerchio e titolo*/
+  }
+  .text h1 {
+    font-weight: 100;
+  }
+  .text h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  .text h3 {
+    font-size: 1.4rem;
+  }
+  .text .comandi {
+    display: flex;
+    width: 60rem;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  .icon-comandi {
+    display: flex;
+    color: black;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .icon-comandi:hover {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+
+  .comandi h3 {
+    padding-left: 2rem;/*spazio tra icono a sinistra e comandi*/
+  }
+  .more{
+    align-self: flex-start;/*allinemaneto 3 puntini in alto a destra*/
+    display: flex;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .more:hover{
+    color: black;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .content {
+    background-color: white;
+  }
+
+
+/*definizione elementi tabella*/
+
+.content table{
+  width: 100%;
+  padding: 4rem;
+  text-align: justify;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.content table:hover{
+    color: blue;
+}
+
+.content th{
+    border-bottom: black;
+    white-space: initial;
+}
+
+.content th,.content td {
+    padding-left: 2rem;
+    height: 2.6rem;
+  }
+
+  /*selezione alternata di colori chiaro e scuro*/
+  .content tr:nth-child(even) { background-color: #CCCCCC; } 
+  .content tr:nth-child(odd) { background-color: #F0F0F0; }
+
+ td button:hover {
+    background-color: blue;
+    color: var(--white-color);
+  }
+
+  /*definizione elementi del footer*/
+
+
+  footer{
+    background-color:rgba(20, 130, 173, 0.788);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    color: var(--white-color);
+  }
+  footer .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+  footer .cerchio {
+    height: 2rem;
+    width: 2rem;
+  }
+  footer .text {
+    margin-right: auto;
+    color:white;
+  }
+  
+  footer .text:hover {
+    cursor: pointer;
+    transition: var(--transition);
+    color: blue;
+  }
+
+  footer i {
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  footer i:hover {
+    color: blue;
+  }
+  footer .player {
+   width: 40rem;
+   display: flex;
+   justify-content: space-around;
+  }
+  
+
+  
+  

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---collegamento al css-->
+    <link rel="stylesheet" href="style.css" />
+    <!---libreria per caricare icone pulsanti app music-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+</head>
+<!--barra laterale-->
+<div class="container">
+    <nav>
+      <ul>
+        <li><i class="fas fa-home active"></i></li>
+        <li><i class="fas fa-bars"></i></li>
+        <li><i class="fas fa-search"></i></li>
+        <li><i class="fas fa-download"></i></li>
+        <li><i class="fas fa-music"></i></li>
+        <li><i class="fas fa-wifi"></i></li>
+      </ul>
+    </nav>
+    <header>
+        <!--HEADER DEFINIZIONE COMANDI PLAY PLAY ALL RIMUOVI E AGGIUNGI-->
+        <div class="icon"><div class="cerchio"></div></div>
+        <div class="text">
+          <h1>Nome del Brano (Anno del disco)</h1>
+          <h2>artista</h2>
+          <h2>nome dell'album</h2>
+          <div class="comandi">
+            <div class="play">
+              <div class="icon-comandi">
+                <i class="fas fa-play"></i>
+                <h3>Play all</h3>
+              </div>
+            </div>
+            <div class="add">
+              <div class="icon-comandi">
+                <i class="fas fa-plus"></i>
+                <h3>Aggiungi alla Playlist</h3>
+              </div>
+            </div>
+            <div class="delete">
+              <div class="icon-comandi">
+                <i class="fas fa-minus"></i>
+                <h3>Rimuovi dalla Playlist</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---tre puntini in alto a destra-->
+    <div class="more"><i class="fas fa-ellipsis-v"></i></div>
+    </header>
+    <!--DEFINIZIONE TABELLA CANZONI-->
+<body>
+    <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>titolo canzone</th>
+              <th>artista</th>
+              <th>minuti</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>titolo canzone</td>
+              <td>artista</td>
+              <td>3:49</td>
+              <td><button>impostazioni</button></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>titolo canzone</td>
+              <td>artista</td>
+              <td>3:49</td>
+              <td><button>impostazioni</button></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>titolo canzone</td>
+              <td>artista</td>
+              <td>3:49</td>
+              <td><button>impostazioni</button></td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>titolo canzone</td>
+              <td>artista</td>
+              <td>3:49</td>
+              <td><button >impostazioni</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+<footer>
+    <!--DEFINIZIONE COMANDI NEL FOOTER-->
+    <div class="icon"><div class="cerchio"></div></div>
+      <div class="text">
+        <h2>Nome canzone</h2>
+        <h2>artista</h2>
+      </div>
+      <div class="player">
+        <i class="fas fa-step-backward"></i> <i class="fas fa-play"></i>
+        <i class="fas fa-step-forward"></i><i class="fas fa-redo-alt"></i>
+      </div>
+    </footer>
+  </body>
+</html>
